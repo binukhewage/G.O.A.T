@@ -17,7 +17,7 @@ const LatestCollection = () => {
   return (
     <div className='my-10'>
         <div className='text-center py-8 text-3xl'>
-            <Title text1={'LATEST'} text2={'COLLECTION'}/>
+            <Title text1={'LATEST'} text2={'ARRIVALS'}/>
             <p className="w-11/12 max-w-xl mx-auto text-sm sm:text-base text-gray-600 pb-6">
             Explore our newest drop featuring bold, iconic tees inspired by legends.
             </p>

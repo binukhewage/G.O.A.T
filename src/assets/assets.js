@@ -8,6 +8,7 @@ import tyson2 from "../assets/tyson2.jpg";
 import tyson3 from "../assets/tyson3.jpg";
 import arnold1 from "../assets/arnold1.jpg";
 
+
 export const assets = {
     hero,
     tupac1,
@@ -54,7 +55,7 @@ export const products = [
         subCategory: "Topwear",
         sizes: ["S", "M", "L"],
         date: 1716729600000,
-        bestSeller: true,
+        bestSeller: false,
     },
     
 ]
