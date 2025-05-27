@@ -31,17 +31,17 @@ const Navbar = () => {
           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
         </NavLink>
         <NavLink 
-          to='/collection' 
+          to='/products' 
           className='flex flex-col items-center gap-1' 
         >
-          <p>Collection</p>
+          <p>Products</p>
           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
         </NavLink>
         <NavLink 
-          to='/about' 
+          to='/collections' 
           className='flex flex-col items-center gap-1'
         >
-          <p>About</p>
+          <p>Collections</p>
           <hr className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
         </NavLink>
         <NavLink 

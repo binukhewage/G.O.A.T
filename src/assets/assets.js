@@ -7,6 +7,7 @@ import tyson1 from "../assets/tyson1.JPG";
 import tyson2 from "../assets/tyson2.jpg";
 import tyson3 from "../assets/tyson3.jpg";
 import arnold1 from "../assets/arnold1.jpg";
+import col1 from "../assets/col1.jpg"
 
 
 
@@ -20,6 +21,7 @@ export const assets = {
     tyson2,
     arnold1,
     logo,
+    col1
     
 }
 
@@ -73,7 +75,7 @@ export const products = [
         bestSeller: false,
     },
     {
-        _id: "aa",
+        _id: "aae",
         name: "Tupac Tee",
         description: "Speak truth. Live real. The Tupac-Inspired Tee celebrates the voice of a generation. With iconic artwork and soft, breathable fabric, it blends culture, attitude, and authenticity. Whether you’re vibing to classic beats or making your own moves, this tee has your back.",
         image: [tupac2, tupac2, tupac3],
@@ -85,7 +87,7 @@ export const products = [
         bestSeller: true,
     },
     {
-        _id: "aa",
+        _id: "aaf",
         name: "Tupac Tee",
         description: "Speak truth. Live real. The Tupac-Inspired Tee celebrates the voice of a generation. With iconic artwork and soft, breathable fabric, it blends culture, attitude, and authenticity. Whether you’re vibing to classic beats or making your own moves, this tee has your back.",
         image: [tupac3, tupac2, tupac3],
