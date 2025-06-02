@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { assets } from '../assets/assets'
 import { NavLink, Link } from 'react-router-dom'
 import { Search, UserRound, ShoppingCart, Menu, X } from 'lucide-react'
+import { ShopContext } from '../context/ShopContext'
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -9,6 +10,8 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
+
+  const {setShowSearch} = useContext(ShopContext)
 
   return (
     <div className='flex justify-between items-center py-5 font-medium px-4 sm:px-6 lg:px-8'>
@@ -68,7 +71,9 @@ const Navbar = () => {
 
       {/* Desktop Icons */}
       <div className='hidden sm:flex items-center gap-6'>
-        <Search className='cursor-pointer text-gray-700'/>
+        <Link to='/products'>
+          <Search className='cursor-pointer text-gray-700' onClick={() => setShowSearch(true)}/>
+        </Link>
         <div className='group relative'>
           <UserRound className='cursor-pointer text-gray-700'/>
           <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
