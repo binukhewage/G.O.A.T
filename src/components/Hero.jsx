@@ -26,7 +26,7 @@ const Hero = () => {
         {/* Hero Right */}
         <div className='w-full sm:w-1/2 relative overflow-hidden'>
             <img 
-                src={assets.hero} 
+                src={assets.fein} 
                 alt="Latest arrivals" 
                 className='w-full h-full object-cover object-center transition-all duration-500 hover:scale-105' 
             />

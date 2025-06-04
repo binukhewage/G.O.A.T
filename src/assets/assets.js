@@ -7,6 +7,7 @@ import tyson2 from "../assets/tyson2.jpg";
 import tyson3 from "../assets/tyson3.jpg";
 import arnold1 from "../assets/arnold1.jpg";
 import col1 from "../assets/col1.jpg"
+import fein from "../assets/FEIN.png"
 
 
 
@@ -19,7 +20,8 @@ export const assets = {
     tyson2,
     arnold1,
     logo,
-    col1
+    col1,
+    fein
     
 }
 
