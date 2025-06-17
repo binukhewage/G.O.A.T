@@ -1,5 +1,7 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import Product from './pages/Product'
@@ -30,6 +32,18 @@ const App = () => {
         <Route path="/collection/:collectionId" element={<CollectionDetail />} />
       </Routes>
       <Footer/>
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </div>
   )
 }

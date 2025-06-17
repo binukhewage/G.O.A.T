@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react';
 
 const Product = () => {
   const { productId } = useParams();
-  const { products, currency } = useContext(ShopContext);
+  const { products, currency, addToCart } = useContext(ShopContext);
   const [productData, setProductData] = useState(null);
   const [image, setImage] = useState("");
   const [size, setSize] = useState("");
@@ -93,7 +93,9 @@ const Product = () => {
           )}
 
           <button 
-            className="w-1/2 bg-black text-white px-4 py-2 active:bg-gray-800">
+            className="w-1/2 bg-black text-white px-4 py-2 active:bg-gray-800"
+            onClick={() => addToCart(productData._id, size)}
+          >
             ADD TO CART
           </button>
           

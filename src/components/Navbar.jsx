@@ -11,7 +11,7 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
-  const {setShowSearch} = useContext(ShopContext)
+  const {setShowSearch, getCartCount} = useContext(ShopContext)
 
   return (
     <div className='flex justify-between items-center py-5 font-medium px-4 sm:px-6 lg:px-8'>
@@ -61,7 +61,7 @@ const Navbar = () => {
         <Link to='/cart' className='relative'>
           <ShoppingCart className='cursor-pointer text-gray-700'/>
           <div className='absolute -top-2 -right-2 bg-black text-white rounded-full w-5 h-5 flex items-center justify-center text-xs'>
-            0
+            {getCartCount()}
           </div>
         </Link>
         <button onClick={toggleMenu} className='text-gray-700'>
@@ -87,7 +87,7 @@ const Navbar = () => {
         <Link to='/cart' className='relative'>
           <ShoppingCart className='cursor-pointer text-gray-700'/>
           <div className='absolute -top-2 -right-2 bg-black text-white rounded-full w-5 h-5 flex items-center justify-center text-xs'>
-            0
+            {getCartCount()}
           </div>
         </Link>
       </div>
