@@ -14,6 +14,7 @@ import Products from './pages/Products'
 import Collections from './pages/Collections'
 import CollectionDetail from './pages/CollectionDetail'
 import SearchBar from './components/SearchBar'
+import Login from './pages/Login'
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
         <Route path='/place-order' element={<PlaceOrder />} />
         <Route path='/orders' element={<Orders />} />
         <Route path="/collection/:collectionId" element={<CollectionDetail />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
       <Footer/>
       <ToastContainer

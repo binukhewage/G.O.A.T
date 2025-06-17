@@ -75,8 +75,10 @@ const Navbar = () => {
           <Search className='cursor-pointer text-gray-700' onClick={() => setShowSearch(true)}/>
         </Link>
         <div className='group relative'>
-          <UserRound className='cursor-pointer text-gray-700'/>
-          <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4'>
+          <Link to="/login" >
+            <UserRound className='cursor-pointer text-gray-700'/>
+          </Link>
+          <div className='group-hover:block hidden absolute dropdown-menu right-0 pt-4 z-50'>
             <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded-sm'>
               <p className='cursor-pointer hover:text-black'>My Profile</p>
               <p className='cursor-pointer hover:text-black'>Orders</p>
